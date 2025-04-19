@@ -1,6 +1,6 @@
 import { useEffect, useState } from "react";
 import { useParams, Link } from "react-router-dom";
-import products from "../../utilities/Product.js";
+import products from "../../utilities/Product";
 import Zoom from "react-medium-image-zoom";
 import "react-medium-image-zoom/dist/styles.css";
 
@@ -29,17 +29,20 @@ type Product = {
 
 const ProductDetails = () => {
   const { id } = useParams<{ id: string }>();
-  const product: Product | undefined = products.find((p) => p.id === id);
+  const product: Product | undefined = products.find(
+    (p: Product) => p.id === id
+  );
+
   const [selectedImage, setSelectedImage] = useState(product?.images[0] || "");
   const [similarProducts, setSimilarProducts] = useState<Product[]>([]);
 
   useEffect(() => {
     window.scrollTo(0, 0);
-    const currentProduct = products.find((p) => p.id === id);
+    const currentProduct = products.find((p: any) => p.id === id);
     if (currentProduct) {
       setSelectedImage(currentProduct.images[0]);
     }
-    const similar = products.filter((p) => p.id !== id);
+    const similar = products.filter((p: any) => p.id !== id);
     setSimilarProducts(similar);
   }, [id]);
 

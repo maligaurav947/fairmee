@@ -1,6 +1,7 @@
 import ProductCard from "../product/ProductCard";
-import products from "../../utilities/Product.js";
+import products from "../../utilities/Product";
 import mainImage from "../../assets/mainimg.jpg";
+
 const Home = () => {
   return (
     <div className="bg-gradient-to-r from-indigo-100 via-white to-pink-100 text-gray-800 min-h-screen">

@@ -20,6 +20,9 @@ const products = [
       "Keep your skin soft and glowing with our hydrating face cream, perfect for daily use.",
     buyLink:
       "https://www.amazon.in/Sarvadnyas-Fairmee-Melasma-Cream-hyperpigmentation/dp/B0DRCJP52B",
+    amazonLink: "https://amazon.in/aloe-vera",
+    meeshoLink: "https://meesho.com/aloe-vera",
+    flipkartLink: "https://flipkart.com/aloe-vera",
     ingredients: [
       "Niacinamide",
       "Kojic Acid",
@@ -55,6 +58,9 @@ const products = [
       "A nourishing body lotion enriched with natural ingredients to provide deep hydration and keep your skin soft and smooth.",
     buyLink:
       "https://www.amazon.in/Sarvadnyas-Fairmee-Hydrating-Body-Lotion/dp/B0DRCPQHTR",
+    amazonLink: "https://amazon.in/aloe-vera",
+    meeshoLink: "https://meesho.com/aloe-vera",
+    flipkartLink: "https://flipkart.com/aloe-vera",
     ingredients: [
       "Aqua",
       "Glycerin",
@@ -86,6 +92,9 @@ const products = [
       "A nourishing glow cream enriched with natural ingredients to provide deep hydration and keep your skin soft and radiant.",
     buyLink:
       "https://www.amazon.in/Sarvadnyas-Fairmee-Glow-Cream-Hydrates/dp/B0DRCL9JBW",
+    amazonLink: "https://amazon.in/aloe-vera",
+    meeshoLink: "https://meesho.com/aloe-vera",
+    flipkartLink: "https://flipkart.com/aloe-vera",
 
     ingredients: [
       "Aloe Vera Extract",
