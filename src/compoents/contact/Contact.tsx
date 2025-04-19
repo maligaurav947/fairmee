@@ -1,4 +1,3 @@
-import React from "react";
 
 const Contact = () => {
   return (
@@ -73,7 +72,6 @@ const Contact = () => {
                   Message
                 </label>
                 <textarea
-                  rows="5"
                   placeholder="Your message"
                   className="w-full border border-gray-300 rounded-lg px-4 py-3 text-gray-700 focus:ring-2 focus:ring-indigo-500 focus:outline-none"
                 ></textarea>
