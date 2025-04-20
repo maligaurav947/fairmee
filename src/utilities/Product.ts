@@ -9,7 +9,6 @@ const products = [
   {
     id: "1",
     name: "Sarvadnya's Fairmee Acne & Melasma Cream - 30g | Reduces acne, prevents breakouts, fades melasma & hyperpigmentation, promotes even skin tone | Unisex",
-    price: "₹125",
 
     images: [
       "https://m.media-amazon.com/images/I/61JCSRlSlyL._SX522_.jpg",
@@ -18,11 +17,8 @@ const products = [
     ],
     description:
       "Keep your skin soft and glowing with our hydrating face cream, perfect for daily use.",
-    buyLink:
-      "https://www.amazon.in/Sarvadnyas-Fairmee-Melasma-Cream-hyperpigmentation/dp/B0DRCJP52B",
-    amazonLink: "https://amazon.in/aloe-vera",
-    meeshoLink: "https://meesho.com/aloe-vera",
-    flipkartLink: "https://flipkart.com/aloe-vera",
+    amazonLink: "https://amzn.in/d/eJhJZu3",
+    meeshoLink: "https://www.meesho.com/s/p/7l8jus?utm_source=s_cc",
     ingredients: [
       "Niacinamide",
       "Kojic Acid",
@@ -38,10 +34,6 @@ const products = [
       "Avoid direct contact with eyes",
       "Discontinue use if irritation occurs",
     ],
-    ratings: {
-      average: 4.2,
-      reviews: 157,
-    },
     madeIn: "India",
     brand: "Sudarshan Cosmetics",
   },
@@ -49,18 +41,15 @@ const products = [
   {
     id: "2",
     name: "Sarvadnya's Fairmee Hydrating Body Lotion - 100ml | Deeply hydrates, softens, smooths rough patches, improves skin health, reduces aging signs, enhances natural radiance | Unisex",
-    price: "₹499",
     images: [
       bodyLotionLocal,
       "https://m.media-amazon.com/images/I/61vCeOJuO8L._SX522_.jpg",
     ],
     description:
       "A nourishing body lotion enriched with natural ingredients to provide deep hydration and keep your skin soft and smooth.",
-    buyLink:
-      "https://www.amazon.in/Sarvadnyas-Fairmee-Hydrating-Body-Lotion/dp/B0DRCPQHTR",
-    amazonLink: "https://amazon.in/aloe-vera",
-    meeshoLink: "https://meesho.com/aloe-vera",
-    flipkartLink: "https://flipkart.com/aloe-vera",
+
+    amazonLink: "https://amzn.in/d/7sLVkUR",
+    meeshoLink: "https://www.meesho.com/s/p/7s78c1?utm_source=s_cc",
     ingredients: [
       "Aqua",
       "Glycerin",
@@ -76,25 +65,17 @@ const products = [
       "Avoid contact with eyes.",
       "Keep out of reach of children.",
     ],
-    ratings: {
-      average: 4.2,
-      reviews: 150,
-    },
     madeIn: "India",
     brand: "Sudarshan Cosmetics",
   },
   {
     id: "3",
     name: "Sarvadnya's Fairmee Glow Cream - 30g | Hydrates, softens, reduces aging signs, improves radiance & skin health, helps with melasma & acne | Unisex",
-    price: "₹499",
     images: [glow1, glow2, glowMockUp, glowCreamBanner],
     description:
       "A nourishing glow cream enriched with natural ingredients to provide deep hydration and keep your skin soft and radiant.",
-    buyLink:
-      "https://www.amazon.in/Sarvadnyas-Fairmee-Glow-Cream-Hydrates/dp/B0DRCL9JBW",
-    amazonLink: "https://amazon.in/aloe-vera",
-    meeshoLink: "https://meesho.com/aloe-vera",
-    flipkartLink: "https://flipkart.com/aloe-vera",
+    amazonLink: "https://amzn.in/d/bGthcAJ",
+    meeshoLink: "https://www.meesho.com/s/p/7si02d?utm_source=s_cc",
 
     ingredients: [
       "Aloe Vera Extract",
@@ -116,10 +97,6 @@ const products = [
       "Avoid contact with eyes.",
       "Keep out of reach of children.",
     ],
-    ratings: {
-      average: 4.2,
-      reviews: 150,
-    },
     madeIn: "India",
     brand: "Sudarshan Cosmetics",
   },
