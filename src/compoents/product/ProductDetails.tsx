@@ -7,20 +7,24 @@ import { Product } from "../../utilities/ProductProps";
 
 const ProductDetails = () => {
   const { id } = useParams<{ id: string }>();
-  const product: Product | undefined = products.find(
-    (p: Product) => p.id === id
-  );
 
-  const [selectedImage, setSelectedImage] = useState(product?.images[0] || "");
+  const [product, setProduct] = useState<Product | undefined>(undefined);
+  const [selectedImage, setSelectedImage] = useState<string>("");
   const [similarProducts, setSimilarProducts] = useState<Product[]>([]);
 
   useEffect(() => {
     window.scrollTo(0, 0);
-    const currentProduct = products.find((p: any) => p.id === id);
+
+    // Find the current product
+    const currentProduct = products.find((p) => p.id === id) as Product;
+
     if (currentProduct) {
+      setProduct(currentProduct);
       setSelectedImage(currentProduct.images[0]);
     }
-    const similar = products.filter((p: any) => p.id !== id);
+
+    // Get similar products
+    const similar = products.filter((p) => p.id !== id) as Product[];
     setSimilarProducts(similar);
   }, [id]);
 
@@ -102,7 +106,6 @@ const ProductDetails = () => {
             </ul>
           </div>
 
-          {/* Origin & Brand */}
           <div className="flex flex-wrap gap-4 text-sm text-gray-600 mt-2">
             <p>
               Made in{" "}
@@ -117,9 +120,7 @@ const ProductDetails = () => {
           </div>
 
           {/* External Links */}
-          {/* External Links */}
           <div className="space-y-3 sm:space-x-4 sm:space-y-0 mt-6 flex flex-col sm:flex-row">
-            {/* Amazon Brand Button */}
             <a
               href={product.amazonLink}
               target="_blank"
@@ -129,7 +130,6 @@ const ProductDetails = () => {
               Buy on Amazon
             </a>
 
-            {/* Meesho Brand Button */}
             <a
               href={product.meeshoLink}
               target="_blank"
@@ -154,10 +154,7 @@ const ProductDetails = () => {
                 key={p.id}
                 className="bg-white p-4 rounded-xl shadow-md hover:shadow-lg transition-shadow duration-300"
               >
-                <Link
-                  to={`/products/${p.id}`}
-                  onClick={() => window.scrollTo(0, 0)}
-                >
+                <Link to={`/products/${p.id}`}>
                   <img
                     src={p.images[0]}
                     alt={p.name}
@@ -166,7 +163,6 @@ const ProductDetails = () => {
                   <h3 className="text-lg font-semibold text-gray-800">
                     {p.name}
                   </h3>
-                  <p className="text-gray-600">{p.price}</p>
                 </Link>
               </div>
             ))}

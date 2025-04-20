@@ -122,10 +122,14 @@ const Home = () => {
                   loop
                   preload="metadata"
                   className="absolute inset-0 w-full h-full object-cover"
-                  onMouseEnter={(e) => e.target.play()}
+                  onMouseEnter={(e) => {
+                    const video = e.currentTarget as HTMLVideoElement;
+                    video.play();
+                  }}
                   onMouseLeave={(e) => {
-                    e.target.pause();
-                    e.target.currentTime = 0;
+                    const video = e.currentTarget as HTMLVideoElement;
+                    video.pause();
+                    video.currentTime = 0;
                   }}
                 />
 

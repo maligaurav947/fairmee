@@ -16,7 +16,6 @@ const ProductCard = ({ product }: { product: Product }) => {
       {/* Content */}
       <div className="p-6">
         <h2 className="text-xl font-semibold text-gray-800">{product.name}</h2>
-        <p className="text-gray-600 mt-1 text-sm">{product.price}</p>
 
         {/* View Details Button */}
         <Link

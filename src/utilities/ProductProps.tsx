@@ -1,20 +1,19 @@
-export type Product = {
+export interface Product {
   id: string;
   name: string;
-  price: string;
   images: string[];
   description: string;
-  buyLink: string;
+  amazonLink: string;
+  meeshoLink: string;
   ingredients: string[];
   skinType: string;
   directions: string;
   warnings: string[];
+  madeIn: string;
+  brand: string;
+  buyLink?: string;
   ratings: {
     average: number;
     reviews: number;
   };
-  madeIn: string;
-  brand: string;
-  amazonLink: string;
-  meeshoLink: string;
-};
+}
