@@ -26,9 +26,9 @@ const Footer = () => {
         {/* Contact Info */}
         <div>
           <h3 className="text-lg font-semibold mb-2">Contact Us</h3>
-          <p>Email: contact@fairmee.com</p>
-          <p>Phone: +91 98765 43210</p>
-          <p>Location: Pune, Maharashtra, India</p>
+          <p>Email: Sudarshancosmetics@gmail.com</p>
+          <p>Phone: +91 82177 44234</p>
+          <p>Location: Shirpur, Maharashtra, India</p>
         </div>
       </div>
 

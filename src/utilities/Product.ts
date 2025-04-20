@@ -43,7 +43,7 @@ const products = [
       reviews: 157,
     },
     madeIn: "India",
-    brand: "Sarvadnya",
+    brand: "Sudarshan Cosmetics",
   },
 
   {
@@ -81,7 +81,7 @@ const products = [
       reviews: 150,
     },
     madeIn: "India",
-    brand: "Sarvadnya's Fairmee",
+    brand: "Sudarshan Cosmetics",
   },
   {
     id: "3",
@@ -121,7 +121,7 @@ const products = [
       reviews: 150,
     },
     madeIn: "India",
-    brand: "Sarvadnya's Fairmee",
+    brand: "Sudarshan Cosmetics",
   },
 ];
 

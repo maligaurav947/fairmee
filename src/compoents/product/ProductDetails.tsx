@@ -3,29 +3,7 @@ import { useParams, Link } from "react-router-dom";
 import products from "../../utilities/Product";
 import Zoom from "react-medium-image-zoom";
 import "react-medium-image-zoom/dist/styles.css";
-
-// Product Type
-type Product = {
-  id: string;
-  name: string;
-  price: string;
-  images: string[];
-  description: string;
-  buyLink: string;
-  ingredients: string[];
-  skinType: string;
-  directions: string;
-  warnings: string[];
-  ratings: {
-    average: number;
-    reviews: number;
-  };
-  madeIn: string;
-  brand: string;
-  amazonLink: string;
-  meeshoLink: string;
-  flipkartLink: string;
-};
+import { Product } from "../../utilities/ProductProps";
 
 const ProductDetails = () => {
   const { id } = useParams<{ id: string }>();
@@ -177,14 +155,6 @@ const ProductDetails = () => {
               className="bg-pink-600 hover:bg-pink-700 text-white font-semibold py-2 px-5 rounded-lg focus:outline-none focus:ring-4 focus:ring-pink-300 transition-all"
             >
               Meesho
-            </a>
-            <a
-              href={product.flipkartLink}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="bg-blue-600 hover:bg-blue-700 text-white font-semibold py-2 px-5 rounded-lg focus:outline-none focus:ring-4 focus:ring-blue-300 transition-all"
-            >
-              Flipkart
             </a>
           </div>
         </div>

@@ -1,11 +1,5 @@
 import { Link } from "react-router-dom";
-
-type Product = {
-  id: string;
-  name: string;
-  price: string;
-  images: string[];
-};
+import { Product } from "../../utilities/ProductProps";
 
 const ProductCard = ({ product }: { product: Product }) => {
   return (

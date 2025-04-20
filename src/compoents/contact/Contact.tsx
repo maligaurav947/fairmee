@@ -1,4 +1,3 @@
-
 const Contact = () => {
   return (
     <div className="bg-gradient-to-r from-indigo-50 via-white to-pink-50 min-h-screen py-16 px-6 md:px-20">
@@ -19,23 +18,23 @@ const Contact = () => {
             <p>
               <strong>Email:</strong>{" "}
               <a
-                href="mailto:contact@fairmee.com"
+                href="mailto:Sudarshancosmetics@gmail.com"
                 className="text-indigo-600 hover:underline"
               >
-                contact@fairmee.com
+                Sudarshancosmetics@gmail.com
               </a>
             </p>
             <p>
               <strong>Phone:</strong>{" "}
               <a
-                href="tel:+919876543210"
+                href="tel:+918217744234"
                 className="text-indigo-600 hover:underline"
               >
-                +91 98765 43210
+                +91 8217744234
               </a>
             </p>
             <p>
-              <strong>Address:</strong> Pune, Maharashtra, India
+              <strong>Address:</strong> Shirpur, Maharashtra, India
             </p>
           </div>
 
